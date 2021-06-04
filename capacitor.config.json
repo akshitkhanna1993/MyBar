@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "mybar",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

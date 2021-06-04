@@ -1,0 +1,7 @@
+{
+  "name": "mybar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
