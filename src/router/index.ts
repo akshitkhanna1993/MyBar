@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import Tabs from '../views/Tabs.vue'
+import DrinksByIngredient from '../views/DrinksByIngredient.vue'
+import Drink from '../views/Drink.vue'
 
-const routes: Array<RouteRecordRaw> = [
+const routes:Array<RouteRecordRaw> = [
   {
     path: '/',
     redirect: '/tabs/tab1'
@@ -28,6 +30,14 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/Tab3.vue')
       }
     ]
+  },
+  {
+  path: '/drinks-by-ingredient/:ingredient',
+  component: DrinksByIngredient,
+  },
+  {
+    path:'/drink/:id',
+    component:Drink
   }
 ]
 
